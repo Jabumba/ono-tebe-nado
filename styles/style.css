@@ -1,18 +1,20 @@
 .overlay {
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0.6;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
   z-index: 1;
-  }
+}
   
 .cap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   width: 1340px;
-  height: 110px;
   margin: 0 auto;
   margin-top: 90px;
+  padding-top: 5px;
+  padding-bottom: 7px;
 }
   
 .cap-nav {
@@ -24,8 +26,6 @@
   display: flex;
   align-items: center;
   gap: 32px;
-  float: left;
-  height: 100%;
   list-style: circle;
   color: #000;
   font-size: 18px;
@@ -42,12 +42,21 @@
 .menu-list-link-1 {
   text-decoration: none;
 }
-  
-.logo {
+
+.logo-link {
   position: absolute;
   width: 148px;
   height: 105px;
+  top: 0;
   left: 597px;
+}
+  
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
   
 .cap-data {
@@ -62,9 +71,14 @@
 }
   
 .cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 135px;
   position: relative;
-  width: 100%;
-  min-height: 757px;
+  width: 1440px;
+  height: 757px;
+  margin: 0 auto;
   margin-top: 92px;
   padding-left: 50px;
   padding-right: 50px;
@@ -92,41 +106,39 @@
   position: relative;
   width: 1340px;
   z-index: 2;
+}
+  
+.accent-span {
+  display: block;
   color: #FFF;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 30px;
+  line-height: 100%;
   text-transform: uppercase;
-}
-  
-.accent-span {
-  display: block;
-  line-height: 115px;
-  letter-spacing: 30px;
 }
   
 .max-letter-space {
   letter-spacing: 60px;
 }
   
-.min-letter-space {
-  letter-spacing: 40px;
-}
-  
 .text-left {
   width: 100%;
+  line-height: 115%;
 }
   
 .text-center {
   text-align: center;
   margin-right: 60px;
-  line-height: 100px;
 }
   
 .text-right {
-  text-align: end;
-  margin-right: -30px;
+  text-align: right;
+}
+
+.text-position {
+  letter-spacing: 0;
 }
   
 .info {
@@ -135,7 +147,6 @@
   align-items: center;
   gap: 78px;
   position: relative;
-  margin-top: 135px;
   z-index: 2;
 }
   
@@ -168,7 +179,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 30px;
+  gap: 27px;
   position: relative;
   width: 1340px;
   min-height: 580px;
@@ -182,6 +193,7 @@
   margin-left: 40px;
   color: #000;
   font-size: 40px;
+  line-height: 47px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -202,9 +214,8 @@
   gap: 25px;
   width: 100%;
   min-height: 450px;
-  margin-top: 27px;
 }
-  
+
 .picture {
   display: flex;
   flex-direction: column;
@@ -214,27 +225,21 @@
   min-height: 450px;
   padding: 50px 40px;
   background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
   
 .picture-1 {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   }
   
 .picture-2 {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
   
 .picture-3 {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
   
 .short-title {
@@ -260,7 +265,6 @@
   
 .see-more {
   position: relative;
-  margin-top: 30px;
   margin-left: 40px;
   text-decoration: underline;
   color: #000;
@@ -274,18 +278,17 @@
   display: flex;
   justify-content: space-between;
   width: 1340px;
-  min-height: 487px;
   margin: 0 auto;
   margin-top: 180px;
 }
-  
-.about-logo {
+
+.logo-container {
   width: 430px;
-  height: 450px;
+  height: 240px;
   padding: 0 95px;
 }
   
-.logo-container {
+.about-logo {
   width: 240px;
   height: 240px;
   padding: 63px 46px;
@@ -301,8 +304,8 @@
 .about-column {
   align-self: flex-end;
   flex-basis: 1;
-  min-height: 388px;
-  padding-left: 25px;
+  margin-left: 25px;
+  margin-top: 100px;
 }
   
 .about-title {
@@ -330,14 +333,14 @@
   margin-bottom: 25px;
 }
   
-footer {
+.dungeon {
   display: flex;
   justify-content: space-between;
   gap: 356px;
   width: 1340px;
-  height: 97px;
   margin: 0 auto;
   margin-top: 180px;
+  margin-bottom: 90px;
 }
   
 .footer-cap-data {
@@ -356,7 +359,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  float: left;
   height: 100%;
   color: #000;
   font-family: 'Raleway', sans-serif;
